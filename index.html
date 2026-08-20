@@ -27,7 +27,7 @@ body{
     var(--felt);
   min-height:100%;
   display:flex; flex-direction:column; align-items:center;
-  padding:14px 12px 90px;
+  padding:8px 10px 64px;
 }
 /* faint felt weave */
 body::before{
@@ -39,14 +39,14 @@ body::before{
 
 /* ---------- header ---------- */
 header{
-  display:flex; align-items:baseline; justify-content:space-between; gap:10px;
-  color:#f3ecd8; margin:2px 2px 12px; flex-wrap:wrap;
+  display:flex; align-items:baseline; justify-content:space-between; gap:8px;
+  color:#f3ecd8; margin:2px 2px 8px; flex-wrap:wrap;
 }
-.brand{font-family:'Graduate'; font-size:clamp(19px,4.6vw,26px); letter-spacing:.06em; text-shadow:0 2px 0 rgba(0,0,0,.35)}
+.brand{font-family:'Graduate'; font-size:clamp(15px,3.8vw,20px); letter-spacing:.06em; text-shadow:0 2px 0 rgba(0,0,0,.35)}
 .brand .flagdot{color:var(--flag)}
-.hud{display:flex; gap:14px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:13px}
-.hud b{font-family:'Graduate'; font-size:17px; letter-spacing:.05em}
-.hud .lbl{opacity:.75; font-size:10px; letter-spacing:.14em; text-transform:uppercase; display:block; text-align:center}
+.hud{display:flex; gap:10px; align-items:baseline; font-family:'IBM Plex Mono',monospace; font-size:11px}
+.hud b{font-family:'Graduate'; font-size:13.5px; letter-spacing:.05em}
+.hud .lbl{opacity:.75; font-size:8.5px; letter-spacing:.14em; text-transform:uppercase; display:block; text-align:center}
 .tees{letter-spacing:2px; color:#ffe9b0}
 #hudMenu{background:none;border:1px solid rgba(255,255,255,.35);color:#f3ecd8;border-radius:8px;padding:4px 10px;font-family:'Graduate';font-size:11px;letter-spacing:.1em;cursor:pointer}
 #hudMenu:hover{background:rgba(255,255,255,.12)}
@@ -57,8 +57,8 @@ header{
   border:1px solid var(--card-edge);
   border-radius:var(--r);
   box-shadow:var(--shadow);
-  padding:14px 14px 16px;
-  margin-bottom:14px;
+  padding:10px 10px 11px;
+  margin-bottom:9px;
   position:relative;
 }
 .card::after{ /* punched scorecard corner hole */
@@ -72,11 +72,11 @@ header{
   opacity:.35; pointer-events:none;
 }
 .card h2{
-  font-family:'Graduate'; font-size:13px; letter-spacing:.18em; color:var(--ink-soft);
-  border-bottom:2px solid var(--rule); padding-bottom:7px; margin-bottom:10px;
+  font-family:'Graduate'; font-size:10.5px; letter-spacing:.16em; color:var(--ink-soft);
+  border-bottom:2px solid var(--rule); padding-bottom:5px; margin-bottom:7px;
   display:flex; justify-content:space-between; align-items:baseline;
 }
-.card h2 .sub{font-family:'IBM Plex Mono'; font-size:11px; letter-spacing:0; text-transform:none; color:var(--ink-soft)}
+.card h2 .sub{font-family:'IBM Plex Mono'; font-size:9.5px; letter-spacing:0; text-transform:none; color:var(--ink-soft)}
 
 /* ---------- equation grid ---------- */
 .eqwrap{overflow-x:auto; padding-bottom:2px}
@@ -84,26 +84,26 @@ header{
   display:grid;
   grid-template-columns:minmax(28px,auto) repeat(3, minmax(64px,1fr)) auto minmax(44px,auto);
   row-gap:2px; column-gap:2px;
-  font-family:'IBM Plex Mono',monospace; font-size:clamp(16px,4.2vw,21px); font-weight:600;
-  min-width:340px;
+  font-family:'IBM Plex Mono',monospace; font-size:clamp(13px,3.5vw,17px); font-weight:600;
+  min-width:300px;
 }
 .eqgrid .hd{
-  font-family:'Graduate'; font-size:12px; letter-spacing:.1em; text-align:center;
+  font-family:'Graduate'; font-size:10px; letter-spacing:.1em; text-align:center;
   color:var(--ink-soft); padding:2px 0 6px;
 }
 .eqlabel{
-  font-family:'Graduate'; font-size:12px; color:#fff; background:var(--felt);
-  border-radius:6px; width:22px; height:22px; display:flex; align-items:center; justify-content:center;
+  font-family:'Graduate'; font-size:10px; color:#fff; background:var(--felt);
+  border-radius:5px; width:18px; height:18px; display:flex; align-items:center; justify-content:center;
   align-self:center; justify-self:start; margin-top:2px;
 }
 .term{
   display:flex; align-items:baseline; justify-content:center; gap:1px;
-  padding:6px 4px; border-radius:8px; transition:background .25s, box-shadow .25s, transform .2s;
+  padding:4px 3px; border-radius:7px; transition:background .25s, box-shadow .25s, transform .2s;
   white-space:nowrap;
 }
 .term .sg{color:var(--ink-soft); font-weight:500; margin-right:2px}
 .term .vr{font-style:italic; font-weight:500}
-.eqs, .rhs{display:flex; align-items:baseline; justify-content:center; padding:6px 2px}
+.eqs, .rhs{display:flex; align-items:baseline; justify-content:center; padding:4px 2px}
 .rhs{justify-content:flex-end; font-weight:700}
 .col-hi{background:rgba(47,125,79,.16); box-shadow:inset 0 0 0 2px rgba(47,125,79,.35)}
 .col-pick{background:rgba(196,61,43,.14); box-shadow:inset 0 0 0 2px rgba(196,61,43,.5)}
@@ -125,10 +125,10 @@ header{
 
 /* variable header buttons (phase 1) */
 .varbtn{
-  font-family:'Graduate'; font-size:clamp(15px,4vw,18px); letter-spacing:.06em;
+  font-family:'Graduate'; font-size:clamp(12.5px,3.3vw,15px); letter-spacing:.06em;
   background:#fff; color:var(--ink);
-  border:2px solid var(--rule); border-bottom-width:4px; border-radius:10px;
-  padding:6px 0 5px; cursor:pointer; width:100%;
+  border:2px solid var(--rule); border-bottom-width:3px; border-radius:9px;
+  padding:4px 0 3px; cursor:pointer; width:100%;
   transition:transform .12s, border-color .15s, background .15s;
 }
 .varbtn:hover{border-color:var(--good); background:#f2fbf4; transform:translateY(-2px)}
@@ -136,7 +136,7 @@ header{
 .varbtn:disabled{opacity:.55; cursor:default; transform:none}
 .varbtn.picked{border-color:var(--flag); background:#fdf1ee; color:var(--flag)}
 .costchip{
-  display:block; font-family:'IBM Plex Mono'; font-size:10.5px; font-weight:600; letter-spacing:0;
+  display:block; font-family:'IBM Plex Mono'; font-size:9.5px; font-weight:600; letter-spacing:0;
   margin-top:3px; color:var(--ink-soft); min-height:14px;
 }
 .costchip.best{color:var(--good)}
@@ -153,13 +153,13 @@ header{
 }
 
 /* ---------- phase panel ---------- */
-#panel .prompt{font-size:15.5px; margin-bottom:10px; line-height:1.45}
+#panel .prompt{font-size:13px; margin-bottom:7px; line-height:1.4}
 .btnrow{display:flex; gap:8px; flex-wrap:wrap}
 .gbtn{
-  font-family:'Graduate'; font-size:13px; letter-spacing:.08em; color:#fff;
+  font-family:'Graduate'; font-size:11px; letter-spacing:.08em; color:#fff;
   background:linear-gradient(180deg,#2f7d4f,#25623e);
   border:none; border-bottom:3px solid #1b4a30; border-radius:10px;
-  padding:10px 16px; cursor:pointer; transition:transform .12s, filter .15s;
+  padding:8px 12px; cursor:pointer; transition:transform .12s, filter .15s;
 }
 .gbtn:hover{filter:brightness(1.08); transform:translateY(-1px)}
 .gbtn:active{transform:translateY(1px)}
@@ -168,88 +168,95 @@ header{
 .gbtn.red{background:linear-gradient(180deg,#c43d2b,#9c2e20); border-bottom-color:#6f1f15}
 .gbtn.quiet{background:#efe7d0; color:var(--ink); border-bottom-color:#cfc4a6}
 .pairbtn{
-  flex:1 1 140px; text-align:left; background:#fff; color:var(--ink);
-  border:2px solid var(--rule); border-bottom-width:4px; border-radius:10px;
-  padding:9px 12px; cursor:pointer; font-family:'Atkinson Hyperlegible'; font-size:14px;
+  flex:1 1 120px; text-align:left; background:#fff; color:var(--ink);
+  border:2px solid var(--rule); border-bottom-width:3px; border-radius:9px;
+  padding:7px 10px; cursor:pointer; font-family:'Atkinson Hyperlegible'; font-size:12.5px;
   transition:transform .12s, border-color .15s;
 }
 .pairbtn:hover:not(:disabled){border-color:var(--good); transform:translateY(-2px)}
 .pairbtn:disabled{opacity:.45; cursor:default}
-.pairbtn .pn{font-family:'Graduate'; font-size:13px; letter-spacing:.06em}
-.pairbtn .pc{display:block; font-family:'IBM Plex Mono'; font-size:11px; color:var(--ink-soft); margin-top:2px}
+.pairbtn .pn{font-family:'Graduate'; font-size:11.5px; letter-spacing:.06em}
+.pairbtn .pc{display:block; font-family:'IBM Plex Mono'; font-size:10px; color:var(--ink-soft); margin-top:2px}
 .pairbtn.haz{border-color:var(--hazard); background:linear-gradient(180deg,#eef6fa,#dcecf4)}
 .pairbtn.haz .pc{color:var(--hazard)}
 
 /* workbench */
-.bench{border:2px solid var(--rule); border-radius:12px; padding:10px; background:#fffdf6; margin-top:8px}
+.bench{border:2px solid var(--rule); border-radius:10px; padding:7px; background:#fffdf6; margin-top:6px}
 .benchrow{
   display:grid; grid-template-columns:auto 1fr; gap:10px; align-items:center;
-  padding:7px 4px; border-bottom:1px dashed var(--rule);
+  padding:5px 3px; border-bottom:1px dashed var(--rule);
 }
 .benchrow:last-of-type{border-bottom:none}
 .stepper{display:flex; align-items:center; gap:4px}
 .stepper button{
-  width:34px; height:34px; border-radius:9px; border:2px solid var(--rule); border-bottom-width:3px;
-  background:#fff; font-family:'IBM Plex Mono'; font-size:18px; font-weight:700; cursor:pointer; color:var(--ink);
+  width:28px; height:28px; border-radius:8px; border:2px solid var(--rule); border-bottom-width:3px;
+  background:#fff; font-family:'IBM Plex Mono'; font-size:15px; font-weight:700; cursor:pointer; color:var(--ink);
 }
 .stepper button:hover{border-color:var(--good)}
 .stepper button:focus-visible{outline:3px solid var(--good); outline-offset:1px}
 .stepper .mval{
-  font-family:'IBM Plex Mono'; font-weight:700; font-size:17px; width:52px; text-align:center;
-  background:#f3edda; border-radius:8px; padding:5px 0;
+  font-family:'IBM Plex Mono'; font-weight:700; font-size:14px; width:44px; text-align:center;
+  background:#f3edda; border-radius:7px; padding:3px 0;
 }
 .stepper .mval.bumped{animation:bump .25s ease-out}
 @keyframes bump{50%{transform:scale(1.18)}}
-.beq{font-family:'IBM Plex Mono'; font-size:clamp(14px,3.9vw,18px); font-weight:600; white-space:nowrap; overflow-x:auto; padding-bottom:2px}
+.beq{font-family:'IBM Plex Mono'; font-size:clamp(12px,3.2vw,15px); font-weight:600; white-space:nowrap; overflow-x:auto; padding-bottom:2px}
 .beq .tg{padding:2px 3px; border-radius:6px; background:rgba(196,61,43,.12); box-shadow:inset 0 0 0 1.5px rgba(196,61,43,.4)}
 .beq .co.flip{display:inline-block; animation:flipnum .3s ease-out}
 @keyframes flipnum{0%{transform:rotateX(90deg)} 100%{transform:rotateX(0)}}
 
 /* zero meter */
 .zmeter{
-  margin-top:10px; display:flex; align-items:center; gap:12px; flex-wrap:wrap;
-  font-family:'IBM Plex Mono'; font-size:14px; font-weight:600;
+  margin-top:7px; display:flex; align-items:center; gap:9px; flex-wrap:wrap;
+  font-family:'IBM Plex Mono'; font-size:12px; font-weight:600;
 }
-.zmath{background:#f3edda; padding:6px 10px; border-radius:9px}
-.zbar{flex:1 1 130px; height:12px; background:#e8e0c8; border-radius:6px; position:relative; min-width:110px}
+.zmath{background:#f3edda; padding:4px 8px; border-radius:8px}
+.zbar{flex:1 1 110px; height:10px; background:#e8e0c8; border-radius:6px; position:relative; min-width:110px}
 .zbar .mid{position:absolute; left:50%; top:-3px; bottom:-3px; width:2px; background:var(--ink-soft); opacity:.5}
 .zbar .ball{
-  position:absolute; top:50%; width:16px; height:16px; border-radius:50%;
+  position:absolute; top:50%; width:13px; height:13px; border-radius:50%;
   background:radial-gradient(circle at 35% 30%, #fff, #cfcfcf 70%, #9a9a9a);
   box-shadow:0 2px 4px rgba(0,0,0,.3);
   transform:translate(-50%,-50%); transition:left .3s cubic-bezier(.3,1.4,.5,1);
 }
 .zbar.holed .ball{background:radial-gradient(circle at 35% 30%, #fff,#dedede 60%,#aaa); animation:sink .5s ease-out both}
 @keyframes sink{to{transform:translate(-50%,-50%) scale(.55); opacity:.65}}
-.zstate{font-family:'Graduate'; font-size:12px; letter-spacing:.08em}
+.zstate{font-family:'Graduate'; font-size:10.5px; letter-spacing:.08em}
 .zstate.ok{color:var(--good)} .zstate.no{color:var(--ink-soft)}
 
 /* caddie */
 #caddie{
   position:fixed; left:0; right:0; bottom:0; z-index:5;
-  display:flex; justify-content:center; padding:10px 12px;
+  display:flex; justify-content:center; padding:7px 10px;
   background:linear-gradient(0deg, rgba(10,26,18,.92), rgba(10,26,18,.75) 70%, transparent);
   pointer-events:none;
 }
 #caddie .bubble{
-  max-width:700px; width:100%; color:#f3ecd8; font-size:14.5px; line-height:1.4;
+  max-width:700px; width:100%; color:#f3ecd8; font-size:12.5px; line-height:1.4;
   display:flex; gap:10px; align-items:flex-start; pointer-events:auto;
 }
 #caddie .cap{
-  flex:none; width:34px; height:34px; border-radius:50%; background:var(--card);
+  flex:none; width:28px; height:28px; border-radius:50%; background:var(--card);
   display:flex; align-items:center; justify-content:center; margin-top:-2px;
   box-shadow:0 3px 8px rgba(0,0,0,.4);
 }
-#caddie .cap svg{width:22px; height:22px}
+#caddie .cap svg{width:18px; height:18px}
 #caddie .txt b{color:#ffe9b0}
-#caddie .txt .mono{font-family:'IBM Plex Mono'; font-size:13px}
+#caddie .txt .mono{font-family:'IBM Plex Mono'; font-size:11.5px}
 
 /* solve / putt lines */
+.solveflow{display:flex; flex-wrap:wrap; align-items:center; gap:6px; margin-top:8px}
 .solveline{
-  font-family:'IBM Plex Mono'; font-weight:600; font-size:clamp(15px,4.2vw,19px);
-  padding:7px 10px; border-radius:9px; background:#fffdf6; border:1.5px solid var(--rule);
-  margin-top:8px; animation:landing .45s ease-out both; overflow-x:auto; white-space:nowrap;
+  font-family:'IBM Plex Mono'; font-weight:600; font-size:clamp(11.5px,3vw,14px);
+  padding:5px 8px; border-radius:8px; background:#fffdf6; border:1.5px solid var(--rule);
+  animation:landing .45s ease-out both; white-space:nowrap; display:inline-flex; align-items:center;
 }
+.solveflow .solveline:not(:first-child)::before{content:"\2192"; margin-right:7px; color:var(--ink-soft); font-weight:400}
+.puttwrap{display:flex; gap:10px; flex-wrap:wrap; align-items:flex-start}
+.puttwrap .pcol{flex:1 1 190px; min-width:170px}
+.puttwrap .solveflow{flex:1 1 200px; margin-top:0; align-content:flex-start}
+.puttwrap .pcol .btnrow{flex-direction:column; align-items:stretch}
+.puttwrap .pcol .pairbtn{flex:none}
 .solveline.final{border-color:var(--good); background:#f0f8f1; font-weight:700}
 .solveline .sub{color:var(--flag)}
 .flagline{display:flex; align-items:center; gap:10px}
@@ -286,21 +293,21 @@ body.shake #app{animation:shake .4s}
   background:linear-gradient(180deg,#f8f3e5,#f0e8d2); border-radius:16px; padding:22px 20px 20px;
   box-shadow:0 24px 60px rgba(0,0,0,.5); border:1px solid var(--card-edge);
 }
-.modal h1{font-family:'Graduate'; font-size:clamp(21px,5.5vw,28px); letter-spacing:.05em; margin-bottom:4px}
+.modal h1{font-family:'Graduate'; font-size:clamp(17px,4.6vw,22px); letter-spacing:.05em; margin-bottom:4px}
 .modal h1 .flagdot{color:var(--flag)}
-.modal .tag{font-family:'IBM Plex Mono'; font-size:12px; color:var(--ink-soft); margin-bottom:14px}
+.modal .tag{font-family:'IBM Plex Mono'; font-size:10.5px; color:var(--ink-soft); margin-bottom:14px}
 .howstep{display:flex; gap:12px; margin:12px 0; align-items:flex-start}
 .hownum{
   flex:none; font-family:'Graduate'; width:30px; height:30px; border-radius:50%;
   background:var(--felt); color:#fff; display:flex; align-items:center; justify-content:center; font-size:14px;
 }
 .howstep b{display:block; font-family:'Graduate'; font-size:13px; letter-spacing:.1em; margin-bottom:2px}
-.howstep p{font-size:14px; line-height:1.45; color:#33301f}
+.howstep p{font-size:12.5px; line-height:1.45; color:#33301f}
 .rulechip{
   display:inline-block; font-family:'IBM Plex Mono'; font-size:12px; background:#efe7d0;
   border:1px solid var(--rule); border-radius:7px; padding:2px 7px; margin:2px 2px 0 0;
 }
-.scoretable{width:100%; border-collapse:collapse; font-family:'IBM Plex Mono'; font-size:13px; margin:10px 0 14px}
+.scoretable{width:100%; border-collapse:collapse; font-family:'IBM Plex Mono'; font-size:11.5px; margin:10px 0 14px}
 .scoretable th{
   font-family:'Graduate'; font-size:10px; letter-spacing:.12em; color:var(--ink-soft);
   border-bottom:2px solid var(--rule); padding:4px 3px; text-align:center;
@@ -940,13 +947,18 @@ function afterChipSwing(v,k,combined){
   showSolveLines(lines,()=>startPutt());
 }
 function showSolveLines(lines,done){
-  $('#panelTitle').textContent='ON THE GREEN';
-  const p=$('#panel'); p.innerHTML='';
+  let flow=$('#solveArea');
+  if(!flow){
+    $('#panelTitle').textContent='ON THE GREEN';
+    const p=$('#panel'); p.innerHTML='';
+    flow=el('div','solveflow'); flow.id='tmpFlow';
+    p.appendChild(flow);
+  }
   lines.forEach((ln,i)=>{
     setTimeout(()=>{
       const d=el('div','solveline'+(i===lines.length-1?' final flagline':''),
         i===lines.length-1?`<span class="flagpin"></span><span>${ln}</span>`:ln);
-      p.appendChild(d);
+      flow.appendChild(d);
       if(i===lines.length-1) setTimeout(done, reduced?50:600);
     }, reduced?i*30:i*650);
   });
@@ -959,31 +971,40 @@ function startPutt(){
   const u=known[0];
   $('#panelTitle').textContent='THE PUTT \u2014 ROLL IT BACK';
   const p=$('#panel'); p.innerHTML='';
-  p.appendChild(el('div','prompt',
-    `You know <b><i>${VARS[u]}</i> = ${S.solved[u]}</b>. Putt it back into a fairway line to free the next variable.`));
+  const wrap=el('div','puttwrap');
+  const pcol=el('div','pcol'); pcol.id='puttCol';
+  pcol.appendChild(el('div','prompt',
+    `<b><i>${VARS[u]}</i> = ${S.solved[u]}</b> is in. Putt it back into a fairway line to free the next variable.`));
   const row=el('div','btnrow');
   const others=remainingVars();
   S.derived.forEach((d,i)=>{
-    // skip rows that don't contain the other unknown
     const btn=el('button','pairbtn',`<span class="pn">Line ${'AB'[i]}</span><span class="pc">${fmt2(d.r,others)}</span>`);
     btn.type='button';
     btn.addEventListener('click',()=>puttInto(d.r,others,i));
     row.appendChild(btn);
   });
-  p.appendChild(row);
-  caddie(`Putts are gimmes \u2014 no strokes. Substituting a known value is just rolling the ball downhill: pick a line and watch it drop.`);
+  pcol.appendChild(row);
+  wrap.appendChild(pcol);
+  const flow=el('div','solveflow'); flow.id='solveArea';
+  flow.appendChild(el('div','solveline final flagline',`<span class="flagpin"></span><span><b><i>${VARS[u]}</i> = ${S.solved[u]}</b></span>`));
+  wrap.appendChild(flow);
+  p.appendChild(wrap);
+  caddie(`Putts are gimmes \u2014 no strokes. Substituting a known value is just rolling the ball downhill: pick a line and watch it roll on the right.`);
 }
 function puttInto(r,vars,label){
+  if(S.phase!=='putt1') return;
   const known=Object.keys(S.solved).map(Number);
   const u=known[0], uVal=S.solved[u];
   const kU=vars.indexOf(u), kW=1-kU, w=vars[kW];
   if(r[kW]===0){ caddie(`That line doesn't contain <i>${VARS[w]}</i> \u2014 try the other one.`); return; }
+  S.phase='putt1b';
+  document.querySelectorAll('#puttCol .pairbtn').forEach(b=>b.disabled=true);
   const cW=r[kW], cU=r[kU], rhs=r[2];
   const wVal=(rhs-cU*uVal)/cW;
   S.solved[w]=wVal;
   const lines=[
     fmt2(r,vars),
-    `${Math.abs(cW)===1?(cW<0?'\u2212':''):cW}<i>${VARS[w]}</i> ${cU*uVal<0?'\u2212':'+'} <span class="sub">${Math.abs(cU)===1?'':Math.abs(cU)}(${uVal})</span>${Math.abs(cU)!==1?'':''} = ${rhs}`,
+    `${Math.abs(cW)===1?(cW<0?'\u2212':''):cW}<i>${VARS[w]}</i> ${cU*uVal<0?'\u2212':'+'} <span class="sub">${Math.abs(cU)===1?'':Math.abs(cU)}(${uVal})</span> = ${rhs}`,
     `${Math.abs(cW)===1?(cW<0?'\u2212':''):cW}<i>${VARS[w]}</i> = ${rhs} ${cU*uVal<0?'+':'\u2212'} ${Math.abs(cU*uVal)}`,
     `<b><i>${VARS[w]}</i> = ${wVal}</b>`
   ];
@@ -991,23 +1012,25 @@ function puttInto(r,vars,label){
 }
 function puttFinal(){
   S.phase='putt2';
-  const solvedVars=Object.keys(S.solved).map(Number);
   const v=S.pickedVar;
-  const p=$('#panel');
+  const pcol=$('#puttCol');
   const note=el('div','prompt');
-  note.style.marginTop='12px';
+  note.style.marginTop='10px';
   note.innerHTML=`Last putt: drop both values into <b>any original equation</b> to free <i>${VARS[v]}</i>.`;
-  p.appendChild(note);
+  pcol.appendChild(note);
   const row=el('div','btnrow');
   for(let e=0;e<3;e++){
-    const btn=el('button','pairbtn',`<span class="pn">Equation ${CIRC[e]}</span>`);
+    const btn=el('button','pairbtn eqput',`<span class="pn">Equation ${CIRC[e]}</span>`);
     btn.type='button';
     btn.addEventListener('click',()=>finalPutt(e));
     row.appendChild(btn);
   }
-  p.appendChild(row);
+  pcol.appendChild(row);
 }
 function finalPutt(e){
+  if(S.phase!=='putt2') return;
+  S.phase='putt2b';
+  document.querySelectorAll('#puttCol .eqput').forEach(b=>b.disabled=true);
   const v=S.pickedVar;
   const others=remainingVars();
   const A=H.A[e], rhs=H.b[e];
